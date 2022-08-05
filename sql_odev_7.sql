@@ -12,7 +12,7 @@ having count(*)>50;
 select store_id, count(*)from customer
 group by store_id;
 
---4-)4. city tablosunda bulunan şehir verilerini country_id sütununa göre gruplandırdıktan sonra en fazla şehir sayısı barındıran country_id bilgisini ve şehir sayısını paylaşınız.
+--4-)city tablosunda bulunan şehir verilerini country_id sütununa göre gruplandırdıktan sonra en fazla şehir sayısı barındıran country_id bilgisini ve şehir sayısını paylaşınız.
 select country_id,COUNT(*) from city
 group by country_id
 order by count(city)desc
